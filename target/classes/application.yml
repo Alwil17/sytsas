@@ -1,0 +1,24 @@
+server:
+  port: 8282
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://bvrjnhl:IxSi1MduzkPqvvhx@cluster0.erw7h.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      database: sytsas
+  profiles:
+    active: debug
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 5MB
+      max-request-size: 10MB
+  application:
+    name: SytSaS
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+    com.grey.sytsas: DEBUG
